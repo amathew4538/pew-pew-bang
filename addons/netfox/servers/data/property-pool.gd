@@ -1,0 +1,78 @@
+extends RefCounted
+class_name _PropertyPool
+
+# Stores a set of properties, with each property belonging to a subject
+
+var _properties_by_subject := {} # object to property array
+var _subjects: Array[Object] = []
+
+static func of(entries: Array[Array]) -> _PropertyPool:
+	var pool := _PropertyPool.new()
+
+	for entry in entries:
+		var subject := entry[0] as Object
+		var property := entry[1] as NodePath
+		pool.add(subject, property)
+
+	return pool
+
+func add(subject: Object, property: NodePath) -> void:
+	if has(subject, property):
+		return
+
+	if not _properties_by_subject.has(subject):
+		_properties_by_subject[subject] = [property]
+		_subjects.append(subject)
+	else:
+		_properties_by_subject[subject].append(property)
+
+func has(subject: Object, property: NodePath) -> bool:
+	return (_properties_by_subject.get(subject, []) as Array).has(property)
+
+func has_subject(subject: Object) -> bool:
+	return _properties_by_subject.has(subject)
+
+func erase(subject: Object, property: NodePath) -> void:
+	if not _properties_by_subject.has(subject):
+		return
+
+	var props := _properties_by_subject[subject] as Array
+	props.erase(property)
+
+	if props.is_empty():
+		_properties_by_subject.erase(subject)
+		_subjects.erase(subject)
+
+func erase_subject(subject: Object) -> void:
+	if _properties_by_subject.erase(subject):
+		_subjects.erase(subject)
+
+func clear() -> void:
+	_properties_by_subject.clear()
+	_subjects.clear()
+
+func get_properties_of(subject: Object) -> Array[NodePath]:
+	var properties: Array[NodePath] = []
+	properties.assign(_properties_by_subject.get(subject, []))
+	return properties
+
+func get_properties_of_raw(subject: Object) -> Array:
+	return _properties_by_subject.get(subject, [])
+
+func get_subjects() -> Array[Object]:
+	var result: Array[Object] = []
+	result.assign(_subjects)
+	return result
+
+func get_subjects_raw() -> Array:
+	return _subjects
+
+func is_empty() -> bool:
+	return _subjects.is_empty()
+
+func set_from_paths(root: Node, paths: Array[String]) -> void:
+	clear()
+
+	for path in paths:
+		var prop := PropertyEntry.parse(root, path)
+		add(prop.node, prop.property)
