@@ -586,3 +586,7 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/godot,macos,windows,dotnetcore,visualstudiocode,rider,csharp,monodevelop
 
 !addons/**
+
+addons/epic-online-services-godot/
+addons/fmod/
+addons/godotsteam/
