@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://d38lv4t6hb6fj"]
+
+[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="1_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://x2u34ltgm4hq" path="res://scenes/player_controller.tscn" id="2_sugp2"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_jh7gh"]
+size = Vector3(5, 1, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uxksl"]
+size = Vector3(5, 1, 5)
+
+[node name="Main" type="Node3D" unique_id=49353717]
+
+[node name="FmodBankLoader" type="FmodBankLoader" parent="." unique_id=188622537]
+bank_paths = ["res://fmod/Build/Desktop/Master.strings.bank", "res://fmod/Build/Desktop/Master.bank"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1448727758]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=1297311230]
+mesh = SubResource("BoxMesh_jh7gh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1841130379]
+shape = SubResource("BoxShape3D_uxksl")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=795744819]
+physics_interpolation_mode = 2
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+top_level = true
+
+[node name="PhantomCameraHost" type="Node" parent="Camera3D" unique_id=1845708772]
+process_priority = 300
+process_physics_priority = 300
+script = ExtResource("1_0wfyh")
+metadata/_custom_type_script = "uid://bd046eokvcnu2"
+
+[node name="FmodListener3D" type="FmodListener3D" parent="Camera3D" unique_id=1667166586]
+
+[node name="PlayerController" parent="." unique_id=1950974645 instance=ExtResource("2_sugp2")]

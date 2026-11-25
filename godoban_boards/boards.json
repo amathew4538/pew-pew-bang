@@ -1,0 +1,10 @@
+{
+  "current": "main_2df6",
+  "boards": [
+    {
+      "id": "main_2df6",
+      "name": "Main",
+      "path": "res://godoban_boards/main_2df6.json"
+    }
+  ]
+}

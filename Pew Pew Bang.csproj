@@ -1,0 +1,16 @@
+<Project Sdk="Godot.NET.Sdk/4.8.0-beta.5">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <RootNamespace>PewPewBang</RootNamespace>
+    <WarningsAsErrors>CS9057</WarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Chickensoft.AutoInject" Version="2.14.18" />
+    <PackageReference Include="Chickensoft.AutoInject.Analyzers" Version="2.14.18" />
+    <PackageReference Include="Chickensoft.GodotNodeInterfaces" Version="3.0.46" />
+    <PackageReference Include="Chickensoft.Introspection" Version="3.0.3" />
+    <PackageReference Include="Chickensoft.Introspection.Generator" Version="3.0.3" PrivateAssets="all" OutputItemType="analyzer" />
+    <PackageReference Include="CommunityToolkit.HighPerformance" Version="8.4.2" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,495 @@
+{
+  "name": "Main",
+  "next_id": 40,
+  "tags": [
+    "Base Game",
+    "Nightmare Mode"
+  ],
+  "epics": [
+    {
+      "id": "epic_2",
+      "title": "Weapons",
+      "color": "ff00ff"
+    },
+    {
+      "id": "epic_3",
+      "title": "Story",
+      "color": "ffff00"
+    },
+    {
+      "id": "epic_4",
+      "title": "Gameplay",
+      "color": "00ffff"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task_7",
+      "title": "Nightmare Mode",
+      "description": "Secret mode with really hard gameplay and horror elements. Makes guns shoot actual bullets",
+      "status": "backlog",
+      "priority": "low",
+      "epic_id": "epic_4",
+      "due_date": null,
+      "tags": [
+        "Nightmare Mode"
+      ],
+      "created_at": 1795462000,
+      "updated_at": 1795462988
+    },
+    {
+      "id": "task_8",
+      "title": "Enemy AI",
+      "description": "",
+      "status": "backlog",
+      "priority": "critical",
+      "epic_id": "epic_4",
+      "due_date": null,
+      "tags": [
+        "Base Game",
+        "Nightmare Mode"
+      ],
+      "created_at": 1795462095,
+      "updated_at": 1795463669
+    },
+    {
+      "id": "task_10",
+      "title": "Player Sprite",
+      "description": "",
+      "status": "backlog",
+      "priority": "high",
+      "epic_id": "epic_4",
+      "due_date": null,
+      "tags": [
+        "Base Game",
+        "Nightmare Mode"
+      ],
+      "created_at": 1795462815,
+      "updated_at": 1795463737
+    },
+    {
+      "id": "task_12",
+      "title": "Squeaky Hammer",
+      "description": "",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Base Game"
+      ],
+      "created_at": 1795463075,
+      "updated_at": 1795463075
+    },
+    {
+      "id": "task_13",
+      "title": "Bent Sledge Hammer",
+      "description": "Bent. Snaps in one hit but insta-kill",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Nightmare Mode"
+      ],
+      "created_at": 1795463108,
+      "updated_at": 1795463587
+    },
+    {
+      "id": "task_14",
+      "title": "Leaf Blower",
+      "description": "",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Base Game"
+      ],
+      "created_at": 1795463442,
+      "updated_at": 1795463442
+    },
+    {
+      "id": "task_15",
+      "title": "Flamethrower",
+      "description": "Broken. Sometimes only spits out embers",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Nightmare Mode"
+      ],
+      "created_at": 1795463501,
+      "updated_at": 1795463501
+    },
+    {
+      "id": "task_16",
+      "title": "Rusty Hand Saw",
+      "description": "Covered in rust and blood",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Nightmare Mode"
+      ],
+      "created_at": 1795463547,
+      "updated_at": 1795463610
+    },
+    {
+      "id": "task_17",
+      "title": "Finger Gun",
+      "description": "",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Base Game"
+      ],
+      "created_at": 1795463829,
+      "updated_at": 1795463829
+    },
+    {
+      "id": "task_18",
+      "title": "Bone Gun",
+      "description": "Figner gun but skin missing/hanging off in shreds",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Nightmare Mode"
+      ],
+      "created_at": 1795463868,
+      "updated_at": 1795463874
+    },
+    {
+      "id": "task_19",
+      "title": "Rubber Band Gun",
+      "description": "Machine gun style",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Base Game"
+      ],
+      "created_at": 1795463983,
+      "updated_at": 1795463983
+    },
+    {
+      "id": "task_20",
+      "title": "Barbed Wire Gun",
+      "description": "Fires spools of barbed wire that shreds enemies into pieces",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Nightmare Mode"
+      ],
+      "created_at": 1795464044,
+      "updated_at": 1795464044
+    },
+    {
+      "id": "task_21",
+      "title": "Party Popper",
+      "description": "",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Base Game"
+      ],
+      "created_at": 1795464131,
+      "updated_at": 1795464131
+    },
+    {
+      "id": "task_22",
+      "title": "Flechette Blunderbuss",
+      "description": "Fires many  rusty nails",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Nightmare Mode"
+      ],
+      "created_at": 1795464224,
+      "updated_at": 1795464235
+    },
+    {
+      "id": "task_23",
+      "title": "T-Shirt Cannon",
+      "description": "",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Base Game"
+      ],
+      "created_at": 1795464266,
+      "updated_at": 1795464266
+    },
+    {
+      "id": "task_24",
+      "title": "Grapeshot Mortar",
+      "description": "",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Nightmare Mode"
+      ],
+      "created_at": 1795464351,
+      "updated_at": 1795464351
+    },
+    {
+      "id": "task_25",
+      "title": "Bubble Minigun",
+      "description": "",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Base Game"
+      ],
+      "created_at": 1795464582,
+      "updated_at": 1795464589
+    },
+    {
+      "id": "task_26",
+      "title": "Acid Minigun",
+      "description": "",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Nightmare Mode"
+      ],
+      "created_at": 1795464615,
+      "updated_at": 1795464615
+    },
+    {
+      "id": "task_27",
+      "title": "Ping-Pong Ball Launcher",
+      "description": "Bouncing Projectiles. Floor Mounted",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Base Game"
+      ],
+      "created_at": 1795464749,
+      "updated_at": 1795464786
+    },
+    {
+      "id": "task_28",
+      "title": ".50 BMG Autocannon",
+      "description": "Floor Mounted. Like a GAU-19",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Nightmare Mode"
+      ],
+      "created_at": 1795464861,
+      "updated_at": 1795465137
+    },
+    {
+      "id": "task_29",
+      "title": "Soda Bomb",
+      "description": "Coke and Mentos grenade fr",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Base Game"
+      ],
+      "created_at": 1795465092,
+      "updated_at": 1795465098
+    },
+    {
+      "id": "task_30",
+      "title": "Frag Grenade",
+      "description": "Chance to be a dud or blow up in hand",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Nightmare Mode"
+      ],
+      "created_at": 1795465227,
+      "updated_at": 1795465227
+    },
+    {
+      "id": "task_31",
+      "title": "Water Ballon Slingshot",
+      "description": "",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Base Game"
+      ],
+      "created_at": 1795465322,
+      "updated_at": 1795465322
+    },
+    {
+      "id": "task_32",
+      "title": "Mustard Gas Launcher",
+      "description": "",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Nightmare Mode"
+      ],
+      "created_at": 1795465395,
+      "updated_at": 1795465395
+    },
+    {
+      "id": "task_33",
+      "title": "Laser Pointer",
+      "description": "",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Base Game"
+      ],
+      "created_at": 1795465526,
+      "updated_at": 1795465526
+    },
+    {
+      "id": "task_34",
+      "title": "REDACTED Railgun",
+      "description": "Fires an unknown ammo that is REDACTED whenever mentioned",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Nightmare Mode"
+      ],
+      "created_at": 1795465605,
+      "updated_at": 1795465614
+    },
+    {
+      "id": "task_35",
+      "title": "Paper Airplane",
+      "description": "Javelin",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Base Game"
+      ],
+      "created_at": 1795466254,
+      "updated_at": 1795466606
+    },
+    {
+      "id": "task_36",
+      "title": "Anchor Harpoon",
+      "description": "Goes through the target then has spikes flare out unbrella style. Can use to pull the enemy back into melee range",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_2",
+      "due_date": null,
+      "tags": [
+        "Nightmare Mode"
+      ],
+      "created_at": 1795466589,
+      "updated_at": 1795466596
+    },
+    {
+      "id": "task_37",
+      "title": "Insanity",
+      "description": "The more insane you are, the more [INSERT COOL EFFECT HERE] happes",
+      "status": "backlog",
+      "priority": "low",
+      "epic_id": "epic_4",
+      "due_date": null,
+      "tags": [
+        "Nightmare Mode"
+      ],
+      "created_at": 1795553378,
+      "updated_at": 1795581931
+    },
+    {
+      "id": "task_5",
+      "title": "First Person Camera",
+      "description": "",
+      "status": "in_progress",
+      "priority": "critical",
+      "epic_id": "epic_4",
+      "due_date": null,
+      "tags": [
+        "Base Game",
+        "Nightmare Mode"
+      ],
+      "created_at": 1795461871,
+      "updated_at": 1795553385
+    },
+    {
+      "id": "task_38",
+      "title": "Movement",
+      "description": "",
+      "status": "in_progress",
+      "priority": "critical",
+      "epic_id": "epic_4",
+      "due_date": null,
+      "tags": [
+        "Base Game",
+        "Nightmare Mode"
+      ],
+      "created_at": 1795553401,
+      "updated_at": 1795553401
+    },
+    {
+      "id": "task_9",
+      "title": "Ground",
+      "description": "Procedural, low poly 3D triangle-looking style",
+      "status": "backlog",
+      "priority": "critical",
+      "epic_id": "epic_4",
+      "due_date": null,
+      "tags": [
+        "Base Game",
+        "Nightmare Mode"
+      ],
+      "created_at": 1795462141,
+      "updated_at": 1795553448
+    },
+    {
+      "id": "task_39",
+      "title": "Multiplayer",
+      "description": "",
+      "status": "backlog",
+      "priority": "medium",
+      "epic_id": "epic_4",
+      "due_date": null,
+      "tags": [
+        "Base Game",
+        "Nightmare Mode"
+      ],
+      "created_at": 1795558695,
+      "updated_at": 1795558695
+    }
+  ]
+}

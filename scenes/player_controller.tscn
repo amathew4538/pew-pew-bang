@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://x2u34ltgm4hq"]
+
+[ext_resource type="Script" uid="uid://csjccrhj5wnx7" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="1_6agyq"]
+[ext_resource type="Script" uid="uid://4mife8nmb101" path="res://assets/scripts/CameraController.cs" id="1_jh7gh"]
+[ext_resource type="Script" uid="uid://c7r5heyowes1q" path="res://assets/scripts/PlayerController.cs" id="1_uxksl"]
+[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="2_8xumb"]
+[ext_resource type="Script" uid="uid://cm1qmbarx2jr4" path="res://assets/scripts/MouseCapture.cs" id="3_8xumb"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_m0i53"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_48867"]
+
+[sub_resource type="Resource" id="Resource_6nbh1"]
+script = ExtResource("2_8xumb")
+
+[node name="PlayerController" type="CharacterBody3D" unique_id=1950974645]
+script = ExtResource("1_uxksl")
+
+[node name="Mesh" type="MeshInstance3D" parent="." unique_id=188252080]
+mesh = SubResource("CapsuleMesh_m0i53")
+
+[node name="Collision" type="CollisionShape3D" parent="." unique_id=1688746422]
+shape = SubResource("CapsuleShape3D_48867")
+
+[node name="CameraController" type="Node3D" parent="." unique_id=1950377240 node_paths=PackedStringArray("CurrentPlayerController", "CurrentMouseCapture")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+script = ExtResource("1_jh7gh")
+CurrentPlayerController = NodePath("..")
+CurrentMouseCapture = NodePath("../Components/MouseCapture")
+
+[node name="PhantomCamera3D" type="Node3D" parent="CameraController" unique_id=1217455406]
+script = ExtResource("1_6agyq")
+tween_resource = SubResource("Resource_6nbh1")
+metadata/_custom_type_script = "uid://csjccrhj5wnx7"
+
+[node name="Components" type="Node" parent="." unique_id=1341413311]
+
+[node name="MouseCapture" type="Node" parent="Components" unique_id=2112284060]
+script = ExtResource("3_8xumb")
