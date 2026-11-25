@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"  fill="#ffffff" class="kanban logo">
-  <rect x="0" y="0" width="16" height="1.35" rx="0.675"/>
-  <rect x="0.3" y="2" width="2.8" height="9.75" rx="0.9"/>
-  <rect x="4.5" y="2" width="2.8" height="6.25" rx="0.9"/>
-  <rect x="8.7" y="2" width="2.8" height="13.75" rx="0.9"/>
-  <rect x="12.9" y="2" width="2.8" height="7.5" rx="0.9"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="kanban logo" viewBox="0 0 16 16"><rect width="16" height="1.35" x="0" y="0" rx=".675"/><rect width="2.8" height="9.75" x=".3" y="2" rx=".9"/><rect width="2.8" height="6.25" x="4.5" y="2" rx=".9"/><rect width="2.8" height="13.75" x="8.7" y="2" rx=".9"/><rect width="2.8" height="7.5" x="12.9" y="2" rx=".9"/></svg>
