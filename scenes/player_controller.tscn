@@ -5,6 +5,11 @@
 [ext_resource type="Script" uid="uid://c7r5heyowes1q" path="res://assets/scripts/CSharp/PlayerController.cs" id="1_uxksl"]
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="2_8xumb"]
 [ext_resource type="Script" uid="uid://cm1qmbarx2jr4" path="res://assets/scripts/CSharp/MouseCapture.cs" id="3_8xumb"]
+[ext_resource type="Script" uid="uid://dsc2of3sfpout" path="res://assets/states/player/player_limbo_hsm.gd" id="6_7va2w"]
+[ext_resource type="Script" uid="uid://bxi77siwvwpgx" path="res://assets/states/player/player_idle_state.gd" id="7_ba4vk"]
+[ext_resource type="Script" uid="uid://ksut0i7ibj21" path="res://assets/states/player/move_state.gd" id="8_ba4vk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7va2w"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_m0i53"]
 
@@ -13,8 +18,13 @@
 [sub_resource type="Resource" id="Resource_6nbh1"]
 script = ExtResource("2_8xumb")
 
-[node name="PlayerController" type="CharacterBody3D" unique_id=1950974645]
+[node name="PlayerController" type="CharacterBody3D" unique_id=1950974645 node_paths=PackedStringArray("Sprite")]
 script = ExtResource("1_uxksl")
+Sprite = NodePath("AnimatedSprite3D")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=1559513354]
+billboard = 2
+sprite_frames = SubResource("SpriteFrames_7va2w")
 
 [node name="Mesh" type="MeshInstance3D" parent="." unique_id=188252080]
 mesh = SubResource("CapsuleMesh_m0i53")
@@ -38,6 +48,13 @@ metadata/_custom_type_script = "uid://csjccrhj5wnx7"
 [node name="MouseCapture" type="Node" parent="Components" unique_id=2112284060]
 script = ExtResource("3_8xumb")
 
-[node name="LimboHSM" type="LimboHSM" parent="." unique_id=533127976]
+[node name="LimboHSM" type="LimboHSM" parent="." unique_id=533127976 node_paths=PackedStringArray("character")]
+script = ExtResource("6_7va2w")
+character = NodePath("..")
 
 [node name="IdleState" type="LimboState" parent="LimboHSM" unique_id=836731009]
+script = ExtResource("7_ba4vk")
+
+[node name="MoveState" type="LimboState" parent="LimboHSM" unique_id=467091682]
+script = ExtResource("8_ba4vk")
+metadata/_custom_type_script = "uid://dhbs86pvcwhmo"

@@ -1,6 +1,6 @@
 {
   "name": "Main",
-  "next_id": 40,
+  "next_id": 42,
   "tags": [
     "Base Game",
     "Nightmare Mode"
@@ -432,36 +432,6 @@
       "updated_at": 1795581931
     },
     {
-      "id": "task_5",
-      "title": "First Person Camera",
-      "description": "",
-      "status": "in_progress",
-      "priority": "critical",
-      "epic_id": "epic_4",
-      "due_date": null,
-      "tags": [
-        "Base Game",
-        "Nightmare Mode"
-      ],
-      "created_at": 1795461871,
-      "updated_at": 1795553385
-    },
-    {
-      "id": "task_38",
-      "title": "Movement",
-      "description": "",
-      "status": "in_progress",
-      "priority": "critical",
-      "epic_id": "epic_4",
-      "due_date": null,
-      "tags": [
-        "Base Game",
-        "Nightmare Mode"
-      ],
-      "created_at": 1795553401,
-      "updated_at": 1795553401
-    },
-    {
       "id": "task_9",
       "title": "Ground",
       "description": "Procedural, low poly 3D triangle-looking style",
@@ -490,6 +460,66 @@
       ],
       "created_at": 1795558695,
       "updated_at": 1795558695
+    },
+    {
+      "id": "task_40",
+      "title": "Convert Limbo Scripts to C#",
+      "description": "",
+      "status": "backlog",
+      "priority": "low",
+      "epic_id": "epic_4",
+      "due_date": null,
+      "tags": [
+        "Base Game",
+        "Nightmare Mode"
+      ],
+      "created_at": 1795646386,
+      "updated_at": 1795646386
+    },
+    {
+      "id": "task_5",
+      "title": "First Person Camera",
+      "description": "",
+      "status": "done",
+      "priority": "critical",
+      "epic_id": "epic_4",
+      "due_date": null,
+      "tags": [
+        "Base Game",
+        "Nightmare Mode"
+      ],
+      "created_at": 1795461871,
+      "updated_at": 1795646405
+    },
+    {
+      "id": "task_38",
+      "title": "Movement",
+      "description": "",
+      "status": "done",
+      "priority": "critical",
+      "epic_id": "epic_4",
+      "due_date": null,
+      "tags": [
+        "Base Game",
+        "Nightmare Mode"
+      ],
+      "created_at": 1795553401,
+      "updated_at": 1795646420
+    },
+    {
+      "id": "task_41",
+      "title": "Player State Machine",
+      "description": "",
+      "status": "in_progress",
+      "priority": "high",
+      "epic_id": "epic_4",
+      "due_date": null,
+      "tags": [
+        "Base Game",
+        "Nightmare Mode"
+      ],
+      "created_at": 1795646455,
+      "updated_at": 1795646455
     }
   ]
 }

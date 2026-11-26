@@ -11,6 +11,9 @@ public partial class MouseCapture : Node
 
 	private Vector2 _mouseInput;
 
+    private static readonly StringName _exit = new("exit");
+    private static readonly StringName _interact = new("interact");
+
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
     {
@@ -22,12 +25,12 @@ public partial class MouseCapture : Node
     {
         _mouseInput = Vector2.Zero;
 
-		if (Input.IsActionJustPressed("exit") && Input.MouseMode == Input.MouseModeEnum.Captured)
+		if (Input.IsActionJustPressed(_exit) && Input.MouseMode == Input.MouseModeEnum.Captured)
         {
             Input.MouseMode = CurrentMouseMode = Input.MouseModeEnum.Visible;
         }
 
-		if (Input.IsActionJustPressed("interact") && Input.MouseMode == Input.MouseModeEnum.Visible)
+		if (Input.IsActionJustPressed(_interact) && Input.MouseMode == Input.MouseModeEnum.Visible)
         {
             Input.MouseMode = CurrentMouseMode = Input.MouseModeEnum.Captured;
         }
